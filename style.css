@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
+    color: #191313;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0c6c5f;
+}
+
+h2 {
+    color: #0c6c5f;
+}
+
+
+button {
+    background-color: #1ea7da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#saldoContainer {
+    margin: 20px 0;
+    font-size: 18px;
+color: #333;
+}
+
+#historialContainer {
+    text-align: left;
+    display: inline-block;
+}
+
+#historial {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historial li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#historial li button {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#historial li button:hover {
+    background-color: #c82333;
+}
