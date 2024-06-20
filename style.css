@@ -1,52 +1,33 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #fbfbfb;
-    color: #191313;
-    margin: 0;
-    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.banner {
+    background-color: #007bff; /* Fondo azul de Bootstrap */
+    padding: 50px 0;
     text-align: center;
 }
 
-h1 {
-    color: #0c6c5f;
+.banner h1 {
+    color: #dadfe3; 
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
-h2 {
-    color: #0c6c5f;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
-
-
-button {
-    background-color: #1ea7da;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 
 #saldoContainer {
-    margin: 20px 0;
     font-size: 18px;
-color: #333;
+    color: #333;
 }
 
 #historialContainer {
     text-align: left;
-    display: inline-block;
-}
-
-#historial {
-    list-style-type: none;
-    padding: 0;
 }
 
 #historial li {
@@ -71,4 +52,13 @@ color: #333;
 
 #historial li button:hover {
     background-color: #c82333;
+}
+
+.carousel-item {
+    height: 200px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
 }

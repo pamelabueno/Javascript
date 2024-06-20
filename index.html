@@ -4,22 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Billetera Virtual</title>
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Billetera Virtual</h1>
-<div>
-    <button id="verSaldoBtn">Ver Saldo</button>
-    <button id="cargarSaldoBtn">Cargar Saldo</button>
+<div class="banner">
+    <h1 class="text-center">Billetera Virtual</h1>
 </div>
-<div id="saldoContainer"></div>
-<div id="historialContainer">
+<div class="container mt-5">
+    <div class="text-center mt-4">
+    <button id="verSaldoBtn" class="btn btn-primary">Ver Saldo</button>
+    </div>
+    <div class="text-center mt-4">
+    <select id="monedaSelect" class="form-control d-inline-block w-25">
+        <option value="USD">Dólar</option>
+        <option value="EUR">Euro</option>
+        <option value="ARS">Pesos Argentinos</option>
+    </select>
+    <input type="number" id="cantidadInput" class="form-control d-inline-block w-25 ml-2" placeholder="Ingrese cantidad">
+    <button id="cargarSaldoBtn" class="btn btn-success ml-2">Cargar Saldo</button>
+    </div>
+    <div id="saldoContainer" class="text-center mt-4"></div>
+    <div id="historialContainer" class="mt-5">
     <h2>Historial de Transacciones</h2>
-    <ul id="historial"></ul>
+    <ul id="historial" class="list-group"></ul>
+    </div>
+    <div id="cotizacionContainer" class="mt-5">
+    <h2>Cotización</h2>
+    <div id="cotizacionSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagenes/cotizacion.png" class="d-block w-100" alt="Cotización 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagenes/euro.png" class="d-block w-100" alt="Cotización 2">
+        </div>
+        
+        </div>
+        <a class="carousel-control-prev" href="#cotizacionSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#cotizacionSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    </div>
 </div>
-
-<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="billetera.js"></script>
 </body>
 </html>
-
